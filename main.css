@@ -351,6 +351,9 @@ nav.menu-btn {
     justify-content: space-around;
     padding: 40px 0;
   }
+  .footer .container .first-col .social-links {
+    margin-top: 20px;
+  }
   .footer .container .second-col ul.tab-1 li, .footer .container .second-col .tab-2 li {
     text-align: left;
     padding: 10px;
