@@ -13,33 +13,19 @@
     <header>
         <div class="container">
 
-            <div class="nav-links">
-                <nav>
-                    <ul>
-                        <li><a href="/" class="logo">easybank</a></li>
-                    </ul>
-                </nav>                        
-            </div>
-            <img class="menu" src="image/menu.svg" alt="" id="menu-cta">
-            <div class="nav-links primary overlay-nav">
-                <nav class="overlay" id="overlay">
-                    <img src="image/exit.svg" alt="" class="exit-menu" id="menu-exit-cta">
-                    <ul class="primary-navbar">
-                        <li><a class="anchor" href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Careers</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="nav-links secondary">
-                <nav>
-                    <ul class="secondary-navbar">
-                        <li><a class="btn-cta" href="#">Request Invite</a></li>
-                    </ul>   
-                </nav>
-            </div>
+            <a href="/" class="logo">easybank</a>
+            <img class="menu" src="image/menu.svg" alt="" id="menu-cta"> 
+            <nav class="overlay">
+                <img src="image/exit.svg" alt="" class="exit-menu" id="exit-cta">
+                <ul class="primary-navbar">
+                    <li><a class="anchor" href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+                <a class="btn-cta special" href="#">Request Invite</a>
+            </nav>         
 
         </div>
     </header>
@@ -48,10 +34,10 @@
         <div class="container">
             <div class="left-col">
                 <h1>Next generation digital banking</h1>
-                <p>Take your financial life online. Your EasyBank account will be one-stop-shop<br> for spending, saving, budgeting, investing, and much more.</p>
+                <p>Take your financial life online. Your EasyBank account will be one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
                 <a href="#" class="btn-cta">Request Invite</a>
             </div>
-            <img src="image/man-glass.jpg" alt="">
+            <img src="image/mobile_pay.svg" alt="">
         </div>
     </section>
 
@@ -62,7 +48,7 @@
                 <p>We leverage Open Banking to turn your bank account into your financial hub.</p>
             </div>
 
-            <div class="list-items">
+            <div class="list-item">
                 <div class="item-1 item">
                     <div class="icon"><i></i></div>
                     <h4>Online Banking</h4>
@@ -102,7 +88,7 @@
                     <img src="image/white_clouds_pink.jpg" alt="" height="200" width="230">
                     <cite>By Wilson Hutton</cite>
                     <h3>Treat yourself without worrying about money</h3>
-                    <blockquote>Our simple budgeting ffeature allows you to separate out your spending and set realistic limits each month. That means...</blockquote>
+                    <blockquote>Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means...</blockquote>
                 </div>
                 <div class="feeds">
                     <img src="image/computer_with_under_construction.jpg" alt="" height="200" width="230">
@@ -123,11 +109,11 @@
     <footer class="footer">
         <div class="container">
             <div class="first-col">
-                <nav>
-                    <ul>
-                        <li><a href="/" class="logo">easybank</a> </li>
-                    </ul>
-                </nav>  
+                
+                    
+                <a href="/" class="logo">easybank</a>
+                    
+                 
 
                 <div class="social-links">
                     <i class="fab fa-facebook-square"></i>
@@ -157,7 +143,19 @@
             </div>
         </div>
     </footer>
+   
+    <script type="text/javascript" src="script.js">
 
-    <script type="text/javascript" src="script.js"></script>
+        // const mobileMenu = document.getElementById('menu-cta') 
+        //     nav = document.querySelector('nav')
+        //     mobileExit = document.getElementById('exit-cta');
+
+        // mobileMenu.addEventListener('click', () => {
+        //     nav.classList.add('menu-btn');
+        // })
+        // mobileExit.addEventListener('click', () => {
+        //     nav.classList.remove('menu-btn');
+        // })
+    </script>
 </body>
 </html>

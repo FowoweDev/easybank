@@ -1,14 +1,21 @@
-// 
+// Ibeg yopu in the the na,me of god doent delay me this night
+
 const mobileMenu = document.getElementById('menu-cta');
-    mobileExit = document.getElementById('menu-exit-cta');
-    overlay = document.getElementById('overlay');
+const nav = document.querySelector('nav');
+const mobileExit = document.getElementById('exit-cta');
 
-    mobileMenu.addEventListener('click', () => {
-        overlay.classList.add('menu-btn');
-    })
+function toggleNav() {
+    mobileMenu.classList.toggle('btn');
 
-    mobileExit.addEventListener('click', () => {
-        overlay.classList.remove('menu-btn');
-    })
+    nav.classList.toggle('none');
+    if (nav.classList.contains('none')){
+        nav.classList.remove('overlay');
+    } else {
+        nav.classList.add('overlay');
+    }
+}
 
-  
+mobileMenu.addEventListener('click', toggleNav);
+mobileExit.addEventListener('click', toggleNav);
+
+
