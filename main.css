@@ -210,7 +210,8 @@ header .container .overlay {
   border-radius: 20px;
 }
 .footer .container .third-col span {
-  padding-left: 10px;
+  display: block;
+  padding: 28px 10px 0;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.87);
 }
