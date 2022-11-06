@@ -113,9 +113,18 @@ header {
                 
                 .icon {
                     background: linear-gradient(-20deg, dodgerblue, lime);
-                    height: 40px;
-                    width: 40px;
+                    height: 50px;
+                    width: 50px;
                     border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+
+                    i{
+                        color: #f2f2f2;
+                        font-size: 1.3rem;
+                    }
                 }
                 h4{
                     font-weight: 100;
@@ -205,6 +214,7 @@ header {
             .social-links {
                 text-align: center;
                 padding-bottom: 20px;
+                cursor: pointer;
 
                 i{
                     color: rgba(255, 255, 255, 0.87);
@@ -514,7 +524,7 @@ nav.menu-btn {
             }
 
             .third-col {
-                a.btn-cta{
+                a.btn-cta {
                     display: block;
 
                     &:hover {
