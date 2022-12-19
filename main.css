@@ -29,13 +29,11 @@ header .container .overlay {
   background: rgba(243, 243, 243, 0.4509803922);
 }
 .hero .container {
-  width: 100%;
-  height: 100vh;
   padding: 20px 0;
   margin: 0 auto;
 }
 .hero .container .left-col {
-  padding: 0 20px;
+  padding: 0 80px;
 }
 .hero .container .left-col h1 {
   font-size: 2.6rem;
@@ -61,7 +59,7 @@ header .container .overlay {
 }
 .hero .container img {
   padding-top: 60px;
-  height: 200px;
+  height: 240px;
   width: 350px;
 }
 
@@ -128,14 +126,12 @@ header .container .overlay {
   margin-bottom: 40px;
   text-align: center;
   padding-bottom: 20px;
-  width: 100%;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 1px 4px 1px #f2f2f2;
   display: flex;
   flex-direction: column;
 }
 .latest-articles .container .articles .feeds img {
-  width: 100%;
   border-radius: 10px 10px 0 0;
 }
 .latest-articles .container .articles .feeds h3 {
@@ -266,6 +262,26 @@ nav.menu-btn {
   display: block;
 }
 
+@media only screen and (min-width: 386px) {
+  .list-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (min-width: 568px) {
+  .latest-articles .container .articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .latest-articles .container .articles .feeds {
+    width: 230px;
+  }
+  .latest-articles .container .articles .feeds img {
+    width: 230px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .menu, .exit-menu {
     display: none;
@@ -291,6 +307,9 @@ nav.menu-btn {
     color: rgba(0, 0, 0, 0.603);
     font-size: 0.8rem;
   }
+  .hero .container .left-col {
+    padding: 20px;
+  }
   .features .container {
     margin: 0 auto;
     height: 58vh;
@@ -303,15 +322,9 @@ nav.menu-btn {
     padding: 10px;
   }
   .latest-articles .container .articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .latest-articles .container .articles .feeds {
-    width: 280px;
-  }
-  .latest-articles .container .articles .feeds img {
-    width: 280px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
   }
 }
 @media only screen and (min-width: 1080px) {
@@ -347,11 +360,10 @@ nav.menu-btn {
   .latest-articles {
     padding-top: 20px;
   }
-  .latest-articles .container .articles .feeds {
-    width: 200px;
-  }
-  .latest-articles .container .articles .feeds img {
-    width: 200px;
+  .latest-articles .container .articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
   }
   .footer .container {
     width: 1080px;
